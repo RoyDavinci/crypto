@@ -13,7 +13,6 @@ const Login = () => {
 	const [show, setShow] = useState(false);
 
 	const { loginInfo } = user;
-	console.log(loginInfo.email);
 
 	const handleChange = (e) => {
 		const { name, value } = e.target;
@@ -29,23 +28,21 @@ const Login = () => {
 				password: values.password,
 			})
 		);
-	};
 
-	// useEffect(() => {
-	// 	if (
-	// 		loginInfo.email.email === values.email &&
-	// 		loginInfo.email.password === values.password
-	// 	) {
-	// 		navigate("/");
-	// 	// } else {
-	// 	// 	setShow(!show);
-	// 	// }
-	// }, [navigate, loginInfo, values, show]);
+		if (
+			loginInfo?.email.email === values.email &&
+			loginInfo?.email.password === values.password
+		) {
+			navigate("/");
+		} else {
+			setShow(!show);
+		}
+	};
 
 	return (
 		<div className='loginContainer'>
-			{show ? <small>email or password incorrect</small> : ""}
 			<form action='' onSubmit={handleSubmit}>
+				{show ? <small>email or password incorrect</small> : ""}
 				<div className='form-group'>
 					<label htmlFor='email'>Enter Email</label>
 					<input
@@ -55,7 +52,6 @@ const Login = () => {
 						value={values.email}
 						onChange={handleChange}
 					/>
-					{show ? <small>email incorrect</small> : ""}
 				</div>
 				<div className='form-group'>
 					<label htmlFor='password'>Password</label>

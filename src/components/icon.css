@@ -1,6 +1,7 @@
 .iconDetails {
 	display: flex;
 	justify-content: space-between;
+	cursor: pointer;
 }
 .iconDetails span,
 .iconDetails i {

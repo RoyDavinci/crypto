@@ -1,17 +1,27 @@
 import React, { useState, useRef, useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
 import "./home.css";
+import { Link, useNavigate } from "react-router-dom";
 import Logo from "../../design/Screenshot 2022-02-17 104203.png";
 import Swap from "../../components/Swap";
 import Icon from "../../components/Icon";
 import Network from "../../components/Network";
+import { signOut } from "../../actions/userAction";
 
 const Home = () => {
+	const navigate = useNavigate();
+	const dispatch = useDispatch();
 	const [show, setShow] = useState(true);
 	const [network, setNetwork] = useState(true);
 	const [check, setCheck] = useState({ activeId: 0 });
 	const ref = useRef([]);
 
 	const arr = ["Swap", "Pool", "Vote", "Charts"];
+
+	const handleSignOut = () => {
+		dispatch(signOut());
+		navigate("/register");
+	};
 
 	const handleClick = (id) => {
 		setCheck({ activeId: id });
@@ -71,6 +81,7 @@ const Home = () => {
 				<Icon title='Light Theme' Icon='fa-solid fa-moon'></Icon>
 				<Icon title='Docs' Icon='fa-solid fa-book'></Icon>
 				<Icon title='Legal and Privacy' Icon='fa-solid fa-gavel'></Icon>
+				<Icon title='SignOut' onClick={handleSignOut}></Icon>
 			</aside>
 			<aside className={`${network ? "network hide" : "network"}`}>
 				<p>Select A Network</p>
