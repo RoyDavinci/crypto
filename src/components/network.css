@@ -1,0 +1,23 @@
+.green {
+	width: 10px;
+	height: 10px;
+	background-color: rgb(31, 219, 31);
+	border-radius: 50%;
+}
+.top,
+.bottom {
+	display: flex;
+	justify-content: space-between;
+	margin: 8px 0px;
+}
+.title {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+.networkContainer-details {
+	/* background-color: #ccc; */
+	padding: 2px;
+	margin: 7px 0px;
+	border-radius: 10px;
+}

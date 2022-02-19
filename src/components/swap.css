@@ -1,0 +1,104 @@
+.swapComponent-container {
+	margin: 20px 0px;
+	padding: 10px;
+	background-image: linear-gradient(
+			to right,
+			rgba(62, 107, 129, 0.7),
+			rgba(22, 34, 42, 0.7)
+		),
+		url("../design/bitcoin-gd66428d4c_1280.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	font-size: 20px;
+	width: 90%;
+	border-radius: 10px;
+	position: relative;
+}
+
+@media screen and (min-width: 900px) {
+	.swapComponent-container {
+		width: 40%;
+	}
+}
+.exchange {
+	text-align: center;
+	margin: 10px 0px;
+}
+.inputContainer {
+	margin: 20px 0px;
+}
+.swapComponent-selectContainer {
+	display: flex;
+	justify-content: space-between;
+}
+.firstInput p,
+.secondInput p {
+	text-align: left;
+	margin: 20px 0px;
+	font-size: 14px;
+}
+.swapComponent-selectContainer input {
+	font-size: 20px;
+	color: #fff;
+	width: 38%;
+}
+.swapComponent-selectContainer input:focus {
+	border-bottom: 1px solid #eee;
+}
+
+.details h4,
+.name p {
+	display: inline-flex;
+	margin-right: 10px;
+	justify-content: center;
+	align-items: center;
+}
+.seperator {
+	display: flex;
+	justify-content: space-between;
+	margin: 40px 0px;
+}
+.seperator i {
+	display: inline-flex;
+	margin-top: -15px;
+	cursor: pointer;
+	font-size: 40px;
+	color: rgb(102, 238, 68);
+}
+.line {
+	height: 1px;
+	background: rgb(98, 98, 98);
+	width: 40%;
+}
+
+.portfolio {
+	border-top: 1 solid rgb(54, 54, 54);
+	margin-top: 20px;
+}
+.portfolio h5 {
+	text-align: left;
+}
+.portfolio .portfolioContainer {
+	display: flex;
+	justify-content: space-between;
+	margin: 20px auto;
+	border: 1px solid rgb(133, 133, 133);
+	padding: 10px;
+	width: 90%;
+	align-items: center;
+}
+.swapComponent-selectItems select {
+	border-radius: 10px;
+	padding: 5px 15px;
+	background-color: white;
+}
+strong {
+	text-transform: capitalize;
+}
+.inputHide {
+	display: none;
+}
+.inputShow {
+	display: flex;
+}

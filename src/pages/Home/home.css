@@ -1,0 +1,122 @@
+.homeContainer {
+	position: relative;
+}
+
+.homeContainer-logo img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+.homeContainer header,
+.homeContainer-user {
+	display: flex;
+	justify-content: space-between;
+}
+.homeContainer-swap ul {
+	background-color: #172941;
+	color: white;
+	/* padding: 10px; */
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.homeContainer-swap ul li {
+	display: inline-flex;
+	/* margin: 0pc 10px; */
+
+	border-radius: 10px;
+	padding: 15px;
+	height: 100%;
+}
+.background {
+	background-color: #2b222c;
+}
+@media screen and (max-width: 768px) {
+	.homeContainer-swap {
+		display: none;
+	}
+}
+.homeContainer-user {
+	place-items: center;
+	text-align: center;
+}
+.homeContainer-user div {
+	margin: 0px 5px;
+}
+.homeContainer-wallet {
+	padding: 10px;
+	background-color: #172941;
+	border-radius: 50px;
+}
+.homeContainer-crypto {
+	background-color: #2b222c;
+	padding: 10px;
+	color: white;
+	border-radius: 10px;
+	display: flex;
+}
+.homeContainer-crypto p {
+	margin-right: 10px;
+}
+.homeContainer-wallet button {
+	color: #3271c8;
+}
+.homeContainer-userDetails {
+	padding: 10px;
+	color: white;
+	border-radius: 50px;
+	background-color: #2b222c;
+}
+.homeContainer-userDetails button i {
+	font-size: 30px;
+	color: white;
+}
+.swapContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 90vh;
+	flex-direction: column;
+}
+
+.userMenu {
+	position: absolute;
+	top: 70px;
+	right: 0;
+	padding: 10px;
+	width: 15%;
+	line-height: 2rem;
+	border-radius: 10px;
+	background: #212429;
+	padding: 10px;
+}
+.network {
+	position: absolute;
+	right: 20px;
+	top: 50px;
+	padding: 4px;
+	background-color: #212429;
+	width: 20%;
+	/* line-height: 2rem; */
+	border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+	.userMenu {
+		width: 50%;
+	}
+
+	.network {
+		width: 40%;
+	}
+}
+@media screen and (min-width: 769px) and (max-width: 1100px) {
+	.userMenu {
+		width: 40%;
+	}
+}
+.hide {
+	display: none;
+}

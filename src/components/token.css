@@ -1,0 +1,94 @@
+.tokenContainer {
+	width: 60%;
+	background-color: #191b1f;
+	border-radius: 10px;
+	position: relative;
+	background-image: linear-gradient(
+			to right,
+			rgba(62, 107, 129, 0.75),
+			rgba(22, 34, 42, 0.75)
+		),
+		url(../design//0ff7784184af761d38db3013a4d1584e.gif);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.section-center {
+	padding: 10px;
+}
+
+img {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+.select {
+	display: flex;
+	justify-content: space-between;
+}
+.inputContainer {
+	border: 1px solid #ccc;
+	padding: 10px;
+}
+.inputContainer input {
+	font-size: 25px;
+}
+
+.tokenContainer-singleTokenDetails {
+	display: flex;
+}
+.content {
+	align-items: center;
+	justify-content: center;
+	margin-left: 10px;
+	line-height: 1rem;
+}
+.tokenContainer-details {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 50px);
+	grid-gap: 10px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	padding: 3px;
+}
+.flexToken-content {
+	flex-basis: 0;
+	display: flex;
+	background-color: rgb(26, 24, 24);
+	border-radius: 10px;
+	padding: 2px;
+}
+.flexToken-content p {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0px 5px;
+	font-size: 13px;
+}
+.tokenContainer-singleToken {
+	border-top: 1px solid #ccc;
+	margin: 15px 0px;
+	padding: 10px 0px;
+	line-height: 2rem;
+	height: 200px;
+	overflow-y: auto;
+	font-size: 17px;
+}
+.tokenContainer-singleTokenDetails {
+	margin-bottom: 25px;
+	margin-top: 10px;
+}
+.tokenContainer-manageList {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	background-color: #212429;
+	padding: 20px;
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+}
+.tokenContainer-manageList p {
+	margin: 0px 10px;
+}

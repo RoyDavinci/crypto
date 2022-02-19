@@ -1,0 +1,11 @@
+.iconDetails {
+	display: flex;
+	justify-content: space-between;
+}
+.iconDetails span,
+.iconDetails i {
+	display: inline-flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
